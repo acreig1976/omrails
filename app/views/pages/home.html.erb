@@ -1,9 +1,13 @@
-<h1>Welcome to DISTRICT</h1>
+<% if user_signed_in? %>
+<h1>You're signed in!</h1>
+<% else %>
+	<h1>Welcome to DISTRICT</h1>
 
-<p>
-	You have found the homepage of
-	<%= link_to "DISTRICT", "http://dstrct.org"%>
-</p>
-<p>
-	<%= link_to "Sign Up Now!", "#" %>
-</p>
+	<p>
+		You have found the homepage of
+		<%= link_to "DISTRICT", "http://dstrct.org"%>
+	</p>
+	<p>
+		<%= link_to "Sign Up Now!", new_user_registration_path %>
+	</p>
+<% end %>
