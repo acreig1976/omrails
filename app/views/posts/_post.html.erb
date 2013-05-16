@@ -1,4 +1,5 @@
 <tr>
+  <td><%= image_tag post.image(:thumb) %></td>
   <td><%= post.description %></td>
   <td><%= link_to 'Show', post %></td>
   <% if current_user == post.user%>
