@@ -1,6 +1,4 @@
-<% if user_signed_in? %>
-<h1>You're signed in!</h1>
-<% else %>
+<% unless user_signed_in? %>
 	<h1>Welcome to DISTRICT</h1>
 
 	<p>
