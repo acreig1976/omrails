@@ -6,6 +6,7 @@ gem 'devise'
 gem 'simple_form'
 gem "paperclip", :git => 'git://github.com/lsegal/paperclip', :branch => 'remove-aws-sdk-version-check'
 gem 'aws-sdk'
+gem 'faker'
 
 group :production do
 	gem 'pg'
