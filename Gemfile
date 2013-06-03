@@ -16,6 +16,7 @@ end
 
 group :development, :test do
 	gem 'sqlite3'
+	gem 'rspec-rails'
 end
 
 
@@ -25,3 +26,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'bootstrap-sass', '~> 2.3.1.0'
 end
+
+group :test do
+	gem 'capybara'
+end	
