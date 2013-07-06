@@ -1,5 +1,25 @@
 <h1><%= @user.name %></h1>
 
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+    </section>
+    <section>
+      <%= render 'shared/stats' %>
+    </section>
+  </aside>
+  <div class="span8">
+    <%= render 'follow_form' if signed_in? %>
+    .
+    .
+    .
+  </div>
+</div>
+
 <div id="posts">
 	<%= render @posts %>
 </div>
