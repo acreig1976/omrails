@@ -18,6 +18,7 @@ gem 'rails', '4.0.2'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'slim-rails'
+gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'will_paginate'
 
