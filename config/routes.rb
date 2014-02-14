@@ -1,20 +1,15 @@
 Omrails::Application.routes.draw do
+  devise_for :users
   resources :users do
     member do
       get :following, :followers
     end
   end
 
-  resources :sessions,      only: [:new, :create, :destroy]
   resources :microposts,    only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
 
-  get "users/show"
-
   resources :posts
-
-  devise_for :users
-  match 'users/:id' => 'users#show', as: :user
 
   get 'about' => 'pages#about'
 

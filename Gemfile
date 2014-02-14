@@ -1,33 +1,31 @@
 source 'https://rubygems.org'
 ruby File.read(File.expand_path('../.ruby-version', __FILE__))[/^[\d.]+/]
 
-gem 'rails', '3.2.12'
-gem 'jquery-rails'
-gem 'devise'
-gem 'simple_form'
-gem 'paperclip', '~>3.4.2'
-gem 'cocaine', '= 0.5.0'
-gem 'aws-sdk'
 gem 'faker'
-gem 'will_paginate'
+gem 'aws-sdk'
 gem 'bootstrap-will_paginate'
+gem 'bootstrap-sass', '~> 2.3.1.0'
+gem 'cocaine', '= 0.5.0'
+gem 'coffee-rails'
+gem 'devise'
+gem 'foreman'
+gem 'jbuilder'
+gem 'jquery-rails'
+gem 'paperclip', '~>3.4.2'
+gem 'pg'
+gem 'puma'
+gem 'rails', '4.0.2'
+gem 'sass-rails'
+gem 'simple_form'
+gem 'uglifier', '>= 1.3.0'
+gem 'will_paginate'
 
 group :production do
-	gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
-	gem 'sqlite3'
-	gem 'rspec-rails'
-end
-
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
-  gem 'bootstrap-sass', '~> 2.3.1.0'
-end
-
-group :test do
-	gem 'capybara'
+  gem 'database_cleaner'
+  gem 'fabrication'
+  gem 'rspec-rails', '~> 2.0'
 end
