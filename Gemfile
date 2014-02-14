@@ -5,7 +5,7 @@ gem 'rails', '3.2.12'
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
-gem "paperclip", :git => 'git://github.com/lsegal/paperclip', :branch => 'remove-aws-sdk-version-check'
+gem 'paperclip'
 gem 'aws-sdk'
 gem 'faker'
 gem 'will_paginate'
@@ -30,4 +30,4 @@ end
 
 group :test do
 	gem 'capybara'
-end	
+end
